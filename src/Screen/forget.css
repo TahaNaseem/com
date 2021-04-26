@@ -1,0 +1,11 @@
+.t{
+    margin-left:20%;
+    margin-top: 3%;
+    text-decoration: none;
+    background-color: blueviolet;
+    width: 20%;
+    height: 35px;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+}

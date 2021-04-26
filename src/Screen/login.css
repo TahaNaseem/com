@@ -1,0 +1,53 @@
+.container{
+    margin-left: 34%;
+    margin-top: 17%;
+}
+.ema{
+    width: 35%;
+    height: 36px;
+    max-width: 50%;
+    background-color: rgb(238, 238, 238);
+    outline: none;
+    border-radius: 8px;
+    padding-left: 30px;
+    font-size: 20px;
+    border-color: white;
+
+    
+
+}
+.for{
+    margin-left: 20px;
+   
+}
+.em{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 9px;
+   
+}
+.e{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    margin-left: 5px;
+    margin-top: 9px;
+  
+}
+.for{
+    margin-left: 6%;
+    text-decoration: none;
+    color: blueviolet;
+}
+.bt{
+    margin-left: 21%;
+    text-decoration: none;
+    background-color: blueviolet;
+    width: 20%;
+    height: 35px;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+}

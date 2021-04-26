@@ -1,0 +1,47 @@
+.p{
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+}
+.contain{
+    margin-left:15%;
+    margin-top: 15%;
+}
+.mai{
+    width: 30%;
+    height: 36px;
+    max-width: 50%;
+    background-color: rgb(238, 238, 238);
+    outline: none;
+    border-radius: 8px;
+    padding-left: 30px;
+    font-size: 20px;
+    border-color: white;
+    margin-left: 60px;
+}
+.tb{
+    margin-left: 21%;
+    text-decoration: none;
+    background-color: blueviolet;
+    width: 20%;
+    height: 39px;
+    color: white;
+    border-radius: 6px;
+    outline: none;
+    margin-left: 8%
+}
+
+.he{
+   margin-left: 7%;
+   color: rgb(151, 146, 146);
+}
+.ime{
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    margin-left: 66px;
+    margin-top: 10px;
+    color: rgb(168, 50, 50);
+    
+    
+}
