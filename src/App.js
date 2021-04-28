@@ -13,16 +13,17 @@ import Varification from '../src/Screen/verification'
 function App(){
   return(
     <div>
-      <Router history={history}>
+      <Login />
+      {/* <Router history={history}>
          <Switch>
             <Route exact render={(props) =>  <Login {...props} />} path="/" />
             <Route render={(props) =>  <Signup {...props} />} path="/signup" />
-             {/* <Route component={Forget} path="/forgot" /> */}
-             <Route render={(props) =>  <Varification {...props} />} path="/varification" />
+            <Route render={(props) =>  <Home {...props} />} path="/home" />
+            <Route render={(props) =>  <Varification {...props} />} path="/varification" />
            <Route render={(props) =>  <Forgot {...props} />} path="/forgot" />
            
          </Switch>
-       </Router>
+       </Router> */}
        {/* <Varification /> */}
     </div>
 
