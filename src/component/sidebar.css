@@ -1,0 +1,22 @@
+.sidebar{
+    background-image: url(../component/assets/sidebar.png);
+    width: 150px;
+    height: 100vh;
+    position: absolute;
+}
+.tex{
+    margin-left: 27px;
+    margin-top: 50px;
+    color: white;
+}
+.te{
+    margin-left: 30px;
+    color: white;
+}
+
+.goal{
+    width: 100px;
+    height: 100px;
+    margin-top: 195%;
+    margin-left: -50px;
+}

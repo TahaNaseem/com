@@ -8,43 +8,24 @@ import back from '../component/assets/oval1.png'
 import { NavLink } from 'react-router-dom'
 import fire from '../fire'
 import { useHistory } from 'react-router-dom'
+import { SingupAction  } from '../Redux/Action/userAction'
+import { connect } from 'react-redux';
 
-
-function Singup() {
-
+function SingnupAc({SingupAction, user, loading}) {
+  
   let history = useHistory()
   const [name, setName] = useState('')
-  const [user, setuser] = useState('')
+  const [username, setuserName] = useState('')
   const [email, setemail] = useState('')
   const [pass, setpass] = useState('')
   const [phone, setphone] = useState('')
-  const singup = () => {
 
-    fire.auth().createUserWithEmailAndPassword(email, pass)
-      .then((res) => {
-        console.log("resullt signUp", res)
-        fire.firestore().collection("users").add({
-          name: name,
-          email: email,
-          userName: user,
-          phoneNumber: phone,
-          uid: res.user.uid
-        })
-          .then((response) => {
-          alert("Signup Succesfully")
-          history.push('/')
-          })
-          .catch((err) => {
-          alert(err.message)
-          })
-      })
-      .catch((err) => {
-        console.log("error signUp", err)
-        alert(err.message)
-      })
 
-  }
+const Singup = () => {
+  SingupAction(email,pass, name, phone, username)
+}
 
+console.log("reducer user", user, loading)
   return (
 
     <div className="container">
@@ -52,18 +33,30 @@ function Singup() {
       <h1 className="he">Singup</h1><br />
       <img className="ime" src={img3} /><input type="text" className="mai" placeholder="Name" onChange={(e) => setName(e.target.value)} />
 
-      <img className="ime" src={img3} /><input type="text" className="mai" placeholder="Username" onChange={(e) => setuser(e.target.value)} /><br /><br />
+      <img className="ime" src={img3} /><input type="text" className="mai" placeholder="Username" onChange={(e) => setuserName(e.target.value)} /><br /><br />
 
       <img className="ime" src={img1} /><input type="text" className="mai" placeholder="Email" onChange={(e) => setemail(e.target.value)} />
 
       <img className="ime" src={img2} /><input type="password" className="mai" placeholder="Password" onChange={(e) => setpass(e.target.value)} /><br /><br />
       <img className="ime" src={img4} /><input type="number" className="mai" placeholder="Phone Number" onChange={(e) => setphone(e.target.value)} />
-
-      <button className="tb" onClick={singup}><b>Submit</b></button>
+      
+      <button className="tb" onClick={Singup}><b>Submit</b></button> 
+      
 
     </div>    
 
-);
+)
 }
 
-export default Singup;
+
+const mapStateToProps = (state) => ({
+  user: state.userReducer.user,
+  loading: state.userReducer.loader
+
+})
+
+const mapDispatchtToProps = {
+  SingupAction
+}
+
+export default connect(mapStateToProps, mapDispatchtToProps)(SingnupAc)
