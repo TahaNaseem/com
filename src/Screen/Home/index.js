@@ -10,48 +10,42 @@ const Home = (props) => {
         <div>
             {/* <p>{props.id}</p>
             <p>{props.nameid}</p> */}
-
-              <Sidebar/>
-
+<div className="side">
+<Sidebar/>
+</div>
 
             <div className="main">
 
-
-          <div className="pr"> <h2 className="r">Add a Location </h2>
-          <button className="bot">Add Location</button>
-          </div>
-     
-          <div className="pr"> <p className="r">resturent Name</p>
-          <p className="op">Add Location</p>
-          <p className="po">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
+            <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Resturent Name</th>
+      <th scope="col">Add item</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table> 
 
         
 
