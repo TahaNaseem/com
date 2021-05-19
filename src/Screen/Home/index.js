@@ -1,7 +1,10 @@
 import React from 'react'
 import './index.css'
+import edit from '../../component/assets/edit.png'
+import delet from '../../component/assets/delet.png'
 import { connect } from 'react-redux'
 import Sidebar from '../../component/sidebar'
+import {NavLink} from 'react-router-dom'
 
 
 const Home = (props) => {
@@ -36,7 +39,10 @@ const Home = (props) => {
 
 
  <div className="main">
+ <NavLink to="/location"> 
+ <button className="bnt">Add a Location</button></NavLink>
  <h3>Add Location</h3>
+ 
        <table class="table">
   <thead>
     <tr>
@@ -48,23 +54,55 @@ const Home = (props) => {
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Sarawan</th>
+      <th scope="row" className="sa">Sarawan</th>
       <td>orangi Town </td>
-      <td>Otto</td>
-      <td>@mdo</td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
     </tr>
     <tr>
-      <th scope="row">Sarawan</th>
+      <th scope="row" className="sa">Sarawan</th>
       <td>orangi Town </td>
-      <td>Thornton</td>
-      <td>@fat</td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
     </tr>
     <tr>
-      <th scope="row">Sarawan</th>
+      <th scope="row" className="sa">Sarawan</th>
       <td>orangi Town </td>
-      <td>the Bird</td>
-      <td>@twitter</td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
     </tr>
+    <tr>
+      <th scope="row" className="sa">Sarawan</th>
+      <td>orangi Town  </td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
+    </tr>
+    <tr>
+      <th scope="row" className="sa">Sarawan</th>
+      <td>orangi Town </td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
+    </tr>
+
+    <tr>
+      <th scope="row" className="sa">Sarawan</th>
+      <td>orangi Town </td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
+    </tr>
+    <tr>
+      <th scope="row" className="sa">Sarawan</th>
+      <td>orangi Town </td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
+    </tr>
+    <tr>
+      <th scope="row" className="sa">Sarawan</th>
+      <td>orangi Town </td>
+      <td><img className="edi" src={edit}/></td>
+      <td><img className="edi" src={delet}/></td>
+    </tr>
+
   </tbody>
 </table> 
 

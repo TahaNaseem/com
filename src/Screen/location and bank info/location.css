@@ -1,65 +1,25 @@
-/* .pr{
-    margin-left: 20%;
-    display: flex;
-    flex-direction: row;
-}
-.ui{
-    display: flex;
-    flex-direction: row;
-
-}
-.bot{
-    margin-left: 55%;
-    background-color: blue;
-    border-radius: 10px;
-    color: white;
-    margin-top: 10px;
-    height: 50px;
-    width: 150px;
-    outline: none;
-    border: none;
-}
-.r{
-    margin-top: 13px;
-}
-.op{
-    margin-left: 20%;
-    margin-top: 13px;
-    
-}
-.po{
-    margin-left: 33%;
-    margin-top: 10px;
-} */
 @media (max-width:500px) { 
-  .ta{
-display: none;
-  }
-  
-}
-.ta{
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
-
-@media (min-width:500px) { 
-    .side{
+    .ta{
   display: none;
     }
-
-}
-
-.main{
-    width: 85%;
-    margin-left: 12%;
-    margin-top: 20px;
     
-}
+  }
+  .ta{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  @media (min-width:500px) { 
+      .side{
+    display: none;
+      }
+  
+  }
 
-.sidenav {
+  .sidenav {
     height: 100%;
     width: 0;
     position: fixed;
@@ -105,20 +65,51 @@ display: none;
     cursor: pointer; 
     margin-left: 12px;
   }
-  .edi{
-      width: 30px;
-      height: 30px;
+   
+ .ma{
+    width: 85%;
+    margin-left: 12%;
+    margin-top: 40px;
+    
+ }
+ .on{
+     width: 300px;
+     margin-top: 9px;
+     height: 50px;
+     background-color: rgb(242, 242, 242);
+ }
+
+  .form-control:focus {
+  box-shadow: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  
   }
-  .sa{
-      height: 85px;
+  .left{
+    margin: 10%;
   }
-  .bnt{
-      float: right;
-      padding: 14px;
+  .button{
+      padding: 16px;
       border-radius: 14px;
       background-color: blueviolet;
       color: white;
       outline: none;
       border: none;
+      margin-top: 22px;
+      width: 150px;
   }
   
+  #floatingTextarea2{
+    margin-top: 15px;
+    height: 200px;
+    width: 300px;
+    background-color: rgb(242, 242, 242);
+  }
+  .form-select:focus{
+    box-shadow: none;
+  outline: none;
+  background-color: white;
+  }
+  h1{
+    color:rgb(143, 142, 142) ;
+  }
