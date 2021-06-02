@@ -23,19 +23,9 @@ const Home = (props) => {
             {/* <p>{props.id}</p>
             <p>{props.nameid}</p> */}
 
-   <div className="ta">
-        <Sidebar/>
-            </div>  
-        
-<div className="side">
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onClick={closeNav}>&times;</a>
- <Sidebar/>
-</div>
-<span className="spa"onClick={openNav}>&#9776; </span>
-
-</div>
-
+   <div>
+     <Sidebar/>
+   </div>
 
 
  <div className="main">

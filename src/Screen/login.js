@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './login.css';
 import email from '../component/assets/email.png'
 import pass from '../component/assets/passward.png'
+import ova from '../component/assets/oval1.png'
 import { NavLink } from 'react-router-dom';
 import fire from '../fire'
 import { useHistory } from 'react-router-dom'
@@ -18,8 +19,11 @@ function Login({LoginAction, user, loading}) {
   // const [user, setUser] = useState(null)
 
   const login = () => {
+    
       LoginAction(emai, password)
+      
     fire.auth().signInWithEmailAndPassword(emai, password)
+    
       .then(res => {
         // setUser(res.user.uid)
         // setUseremail(res.user.email)
@@ -36,22 +40,56 @@ function Login({LoginAction, user, loading}) {
 
 if(!user){
     return (
-      <div className="container">
-        <h2>Login</h2><br />
-        <img className="em" src={email} /><input type="text" className="ema" placeholder="Email" onChange={(e) => setemai(e.target.value)} /><br /><br />
-        <img className="e" src={pass} /><input type="Password" className="ema" placeholder="Passward" onChange={(e) => setpas(e.target.value)} /><br />
-        <input type="checkbox" />Remeber me
-        {/* <NavLink to="/forget"> */}
-        <a href="#" className="for"><b>Forgetpassward</b></a>
-        {/* </NavLink> */}
-        <br /><br />
-  
-        <button className="bt" onClick={login}><b>login</b></button>
-        <br /><br />
-        {/* // <NavLink to="/signup"> */}
-        <button className="bt"><b>Creat Account</b></button>
-        {/* // </NavLink> */}
-      </div>
+      
+      <div>
+        
+       
+         <div>
+<img className="oval" src={ova}/>
+ <div class="row x">
+ <div class="col-sm u">
+ <form>
+ <div class="form-group">
+ <h2><b>Login</b></h2><br/>
+    <img className="em" src={email} />
+   <input type="text" class="form-control fo" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange={(e) => setemai(e.target.value)} /><br/>
+   
+ </div>
+ <div class="form-group">
+ <img className="e" src={pass}/>
+   <input type="password" class="form-control fo" id="exampleInputPassword1" placeholder="Password"  onChange={(e) => setpas(e.target.value)}/>
+ </div>
+
+ <div class="form-check">
+
+   <input type="checkbox" class="form-check-input check" id="exampleCheck1"/>
+
+   <label class="form-check-label" class="exampleCheck1 remember">Remember me</label>
+ 
+   <NavLink to="/Forgot"> 
+   <a href="#" className="f">Forgetpassward</a> </NavLink>
+ </div>
+   
+
+ <button type="button" class="qu" onClick={login}>login</button>
+
+  <p className="paragra"> Don't have an account? <NavLink to="/signup" className="song"> Sign up </NavLink></p>
+      
+
+</form>
+ </div>
+
+
+</div> 
+
+
+
+</div> 
+
+    
+ </div>
+
+      
     );
 
     }

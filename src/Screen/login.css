@@ -1,9 +1,47 @@
-.container{
-    margin-left: 34%;
-    margin-top: 17%;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+.back{
+   background-color: rgb(235, 5, 5);
+}
+.x{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+ 
+}
+.i{
+    margin-left: -100px;
+    width: 150px;
+    height: 150px;
+}
+.oval{
+    width: 150px;
+    height: 150px;
+   margin-left: -87px;
+}
+
+
+
+
+.fo{
+    width: 310px;
+    padding-left: 30px;
+    background-color: rgb(245, 245, 245);
+    
+}
+.m{
+    margin-right: -100px;
+    width: 150px;
+    height: 150px;
+}
+
 .ema{
-    width: 35%;
+    width:36%;
     height: 36px;
     max-width: 50%;
     background-color: rgb(238, 238, 238);
@@ -16,10 +54,40 @@
     
 
 }
-.for{
-    margin-left: 20px;
-   
+.f{
+   text-decoration: none;
+    color: gray;
+    margin-left: 70px;
+    
 }
+.remember{
+    margin-top: 20px;
+    color: gray;
+}
+.check{
+    margin-top: 24px;
+    
+}
+a{
+    text-decoration: none;
+}
+.qu{
+    margin-left: 190px;
+    margin-top: 19px;
+    text-decoration: none;
+    background-color: blueviolet;
+    width: 40%;
+    height: 50px;
+    color: white;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+.song{
+    color: gray;
+}
+
+
 .em{
     width: 20px;
     height: 20px;
@@ -50,4 +118,9 @@
     color: white;
     border-radius: 6px;
     outline: none;
+}
+.paragra{
+    margin-left: 30px;
+    margin-top: 20px;
+    color: gray;
 }

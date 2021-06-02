@@ -18,19 +18,10 @@ function Location(){
 
         <div>
             
-   <div className="ta">
-        <Sidebar/>
-            </div>  
-        
-<div className="side">
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onClick={closeNav}>&times;</a>
- <Sidebar/>
-</div>
-<span className="spa"onClick={openNav}>&#9776; </span>
-
-</div>
-
+            <div>
+     <Sidebar/>
+   </div>
+   
     <div className="ma">
    
      
@@ -60,10 +51,10 @@ function Location(){
   <option value="2">No</option>
 </select>
 
-<div class="form-floating">
-  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" ></textarea>
+
+  <textarea class="form-control" placeholder=" comment " id="floatingTextarea2" ></textarea>
   <label for="floatingTextarea2">Comments</label>
-</div>
+
   </div>
 
   <div class="col-lg-5">
