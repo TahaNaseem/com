@@ -71,6 +71,8 @@ console.log("reducer user", user, loading)
 
      </div>
      <button className="singupbutton" onClick={Singup}>Submit</button> 
+
+     <p className="sahi">already have an account?<NavLink to="/login"> Signin</NavLink></p>
   </div>    
 
   </div>

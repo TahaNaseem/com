@@ -75,3 +75,17 @@
     color: gray;
 }
 
+.beta{
+    padding: 20px;
+    border-radius: 14px;
+    background-color: blueviolet;
+    color: white;
+    outline: none;
+    border: none;
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 200px;
+}
+.lele{
+    margin-top: 54px;
+}

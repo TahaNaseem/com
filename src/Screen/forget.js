@@ -22,7 +22,7 @@ function Forget(){
  <img className="iconsm" src={email} />
    <input type="text" class="form-control forgetfo" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" onChange={(e)=>setforge(e.target.value)} /><br/>
    
- <NavLink to="/login">
+ <NavLink to="/varification">
  <button type="button" class="qu" onClick={forget}>Submit</button></NavLink>
 </div>
 

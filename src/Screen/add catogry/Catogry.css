@@ -1,0 +1,12 @@
+.catag{
+    margin-top: 50px;
+}
+.bcatag{
+    padding: 16px;
+    border-radius: 14px;
+    background-color: blueviolet;
+    color: white;
+    outline: none;
+    border: none;
+    margin-top: 20px;
+}

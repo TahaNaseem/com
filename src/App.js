@@ -19,15 +19,21 @@ import Menu from './Screen/menu management/menu';
 
 import Sidebar from '../src/component/sidebar'
 import Iteminfo from './Screen/iteminfo/item';
+import Menusecond from './Screen/menu management 2/menusecond';
+import Catogry from './Screen/add catogry/Catogry';
+import NewPass from './Screen/choose passward/newpass';
+import Poppins from './Screen/poppins';
 
 function App(){
   return(
     <div>
-       {/* <Iteminfo/> */}
+   
+   
       <Provider store={store}>
      <Router history={history}>
          <Switch>
-            <Route exact render={(props) =>  <Login {...props} />} path="/" />
+            <Route exact render={(props) =>  <Login {...props} />} path="/login" />
+            <Route exact render={(props) =>  <Poppins {...props} />} path="/" />
             <Route render={(props) =>  <Signup {...props} />} path="/signup" />
             <Route render={(props) =>  <Home {...props} />} path="/home" /> 
              <Route render={(props) =>  <Varification {...props} />} path="/varification" /> 
@@ -36,9 +42,13 @@ function App(){
            <Route render={(props) =>  <Location {...props} />} path="/location" />
            <Route render={(props) =>  <Menu {...props} />} path="/menu" />
            <Route render={(props) =>  <Iteminfo {...props} />} path="/item" />
+           <Route render={(props) =>  <Menusecond {...props} />} path="/Menusecond" />
+             <Route render={(props) =>  <Catogry {...props} />} path="/catogry" />
+             <Route render={(props) =>  <NewPass {...props} />} path="/newpass" />
          </Switch>
        </Router>
-     </Provider>   
+     </Provider>    
+     
      
      
    

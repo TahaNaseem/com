@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import Sidebar from '../../component/sidebar'
 import './item.css'
 
@@ -19,7 +20,7 @@ function Iteminfo(){
            
            <div className="itemmain">
 
-                 
+         
 
 <div class="row">
          
@@ -35,9 +36,7 @@ function Iteminfo(){
    
                <label className="lableto">Item Customization</label>
                <select class="form-select form-select-sm on" aria-label=".form-select-sm example"   onChange={()=>{
-                
-            
-                   
+               
                    const selectedcustom =<input type="text" class="form-control on" placeholder="item customization name" aria-label="First name"/>
                 
                    setcustom(selectedcustom)
@@ -65,7 +64,7 @@ function Iteminfo(){
        
          </div>
        
-         <div class="col-lg-5">
+         <div class="col-lg-5 lele">
          
          <div className="borderdash">
              <div className="filetop">
@@ -77,6 +76,8 @@ function Iteminfo(){
          <p className="pot">Write Discription</p>
          <textarea rows="10" class="form-control textar" spellcheck="false">
          </textarea>
+
+         <NavLink to = "/menusecond"> <button className="beta">Add</button></NavLink>
         
        
          </div>

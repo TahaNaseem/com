@@ -1,0 +1,51 @@
+.logqu{margin-left: 80px;
+margin-top: 25px;
+text-decoration: none;
+background-color: blueviolet;
+width: 50%;
+height: 50px;
+color: white;
+border-radius: 12px;
+outline: none;
+border: none;
+}
+.modtop{
+    margin-top: 150px;
+    height: 300px;
+}
+.moval{
+    width: 100px;
+    height: 100px;
+    margin-left: 37%;
+}
+.mhead{
+    
+    margin-top: 10px;
+    margin-left: 27%;
+}
+.modpsa{
+    margin-left: 13%;
+}
+.closebt{
+    margin-left:34%;
+    margin-bottom: 60px;
+       width: 30%;
+       
+       padding: 14px;
+       border-radius: 14px;
+       background-color: blueviolet;
+       color: white;
+       outline: none;
+       border: none;
+     }
+
+
+.maskal{
+    margin-top: 90px;
+    
+    
+}
+.chal{
+    height:350px;
+    border-radius: 30px;
+}

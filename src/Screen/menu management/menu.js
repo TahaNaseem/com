@@ -6,13 +6,7 @@ import delet from '../../component/assets/delet.png'
 import { NavLink } from "react-router-dom"
 function Menu(){
 
-    function openNav() {
-        document.getElementById("mySidenav").style.width = "200px";
-      }
-      
-      function closeNav() {
-        document.getElementById("mySidenav").style.width = "0";
-      }
+   
     return(
 
        <div>
