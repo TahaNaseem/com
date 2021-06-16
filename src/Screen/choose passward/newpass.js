@@ -4,8 +4,14 @@ import email from '../../component/assets/email.png'
 import pass from '../../component/assets/passward.png'
 import ova from '../../component/assets/oval1.png'
 import oval from '../../component/assets/Oval.png'
+import { useHistory } from 'react-router-dom'
 
 function NewPass(){
+  let history = useHistory()
+  const chek = () => {
+
+  history.push("/login")
+  }
     return(
 
         <div>
@@ -33,7 +39,7 @@ function NewPass(){
 
   
 
-<button type="button" class="logqu" data-bs-toggle="modal" data-bs-target="#exampleModal">continue</button>
+<button type="button" class="logqu" data-bs-toggle="modal" data-bs-target="#exampleModal"  >continue</button>
 
  
      
@@ -48,22 +54,7 @@ function NewPass(){
 
 </div> 
 
-{/* <div class="modal fade modtop" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content mwid">
-     
-      <div class="modal-body">
-        <img className="moval" src={oval}/>
-        <h3 className="mhead">Password Change</h3>
-      <small><p className="modpsa">you  now continue using poopins with your  password</p></small>  
-      </div>
-      
-        <button type="button" class="closebt" data-bs-dismiss="modal">Close</button>
-        
-   
-    </div>
-  </div>
-</div> */}
+
 
 <div class="modal fade maskal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -75,7 +66,7 @@ function NewPass(){
       <small><p className="modpsa">you  now continue using poopins with your  password</p></small> 
       </div>
      
-        <button type="button" class="btn btn-secondary closebt" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary closebt" data-bs-dismiss="modal" onClick={chek}>Close</button>
      
       
     </div>
