@@ -1,13 +1,14 @@
 import firebase from 'firebase'
-// Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyAVzPrOfGFznv7zEmPV3oVdQtDBDGEuQFw",
-    authDomain: "login-bb392.firebaseapp.com",
-    projectId: "login-bb392",
-    storageBucket: "login-bb392.appspot.com",
-    messagingSenderId: "488384966387",
-    appId: "1:488384966387:web:f1b5cfbf94d41166edd186"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  apiKey: "AIzaSyAmCAorg253rq0HjvIz-ttZ42zOcLGhM6k",
+  authDomain: "olxpk-e6193.firebaseapp.com",
+  databaseURL: "https://olxpk-e6193-default-rtdb.firebaseio.com",
+  projectId: "olxpk-e6193",
+  storageBucket: "olxpk-e6193.appspot.com",
+  messagingSenderId: "701117450468",
+  appId: "1:701117450468:web:56c2b86b7edf8235c0c4f1",
+  measurementId: "G-R5Q4LC3629"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
 export default firebase

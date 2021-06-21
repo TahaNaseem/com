@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.f{
+    width: 300px;
+    background-color: #F1f2fa;
+    height: 50px;
+    border-radius: 10px;
+
+}
+.mj{
+    color: black;
+    font-size: 18px;
+    color: #6e6e6e;
+    margin-bottom: 0.5rem;
+}
+.buttuon{
+    width: 200px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    background-color: #6905db;
+    margin-top: 0.5rem;
+    height: 50px;
+}

@@ -1,33 +1,31 @@
-.pr{
-    margin-left: 20%;
-    display: flex;
-    flex-direction: row;
+.importantmain{
+    width: 80%;
+    margin-left: 14%;
+    
+     
 }
-.ui{
-    display: flex;
-    flex-direction: row;
 
-}
+
+/* @media (max-width: 500px) { 
+
+    .m{ 
+        display: none;
+        
+    }
+} */
 .bot{
-    margin-left: 55%;
-    background-color: blue;
-    border-radius: 10px;
     color: white;
-    margin-top: 10px;
-    height: 50px;
-    width: 150px;
-    outline: none;
+    background-color: rgb(7, 7, 119);
+    border-radius: 10px;
     border: none;
-}
-.r{
-    margin-top: 13px;
-}
-.op{
-    margin-left: 20%;
-    margin-top: 13px;
+    width: 110px;
+    height: 40px;
+    float: right;
     
 }
-.po{
-    margin-left: 33%;
+.r{
     margin-top: 10px;
+}
+.iii{
+    height: 40px;
 }

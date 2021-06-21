@@ -1,3 +1,4 @@
+import { useHistory } from 'react-router-dom'
 import firebase from '../../fire'
 
 export const LoginAction = (email, password) => {
@@ -23,7 +24,8 @@ export const LoginAction = (email, password) => {
 
 export const SingupAction = (email, password ,name, phone, username) => {
     return function (dispatch) {
-        firebase.auth().createUserWithEmailAndPassword(email, password,)
+        return new Promise((resolve, reject) => {
+            firebase.auth().createUserWithEmailAndPassword(email, password)
             .then((res) => {
                 var obj = {
                     uid: res.user.uid,
@@ -38,10 +40,15 @@ export const SingupAction = (email, password ,name, phone, username) => {
                     console.log("databaseRes",databaseRes)
                 })
                 alert("Signup Succesfully")
+                resolve({status: true})
+                // history.push("/home")
+
             })
             .catch((err) => {
                 console.log("error", err)
                 alert(err.message)
+                reject({status: false})
             })
+        })
     }
 }

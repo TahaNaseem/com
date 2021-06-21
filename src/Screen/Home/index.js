@@ -1,74 +1,174 @@
 import React from 'react'
 import './index.css'
 import { connect } from 'react-redux'
+import { Table } from 'react-bootstrap'
+import lock from '../../component/assets/2.png'
+import Delete from '../../component/assets/Delete.png'
 import Sidebar from '../../component/sidebar'
+
+
+import { useMediaQuery } from 'react-responsive'
+import { NavLink } from 'react-router-dom'
+ 
+// const Example = () => {
+//   const isDesktopOrLaptop = useMediaQuery({
+//     query: '(min-device-width: 1224px)'
+//   })
+//   const isBigScreen = useMediaQuery({ query: '(min-device-width: 1824px)' })
+//   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+//   const isTabletOrMobileDevice = useMediaQuery({
+//     query: '(max-device-width: 1224px)'
+//   })
+//   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+//   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
+ 
 
 
 const Home = (props) => {
     console.log("props", props)
-    return(
+    return (
+        
         <div>
+        <div>
+        <Sidebar />
+        </div>
             {/* <p>{props.id}</p>
             <p>{props.nameid}</p> */}
-
-              <Sidebar/>
-
-
-            <div className="main">
-
-
-          <div className="pr"> <h2 className="r">Add a Location </h2>
-          <button className="bot">Add Location</button>
-          </div>
-     
-          <div className="pr"> <p className="r">resturent Name</p>
-          <p className="op">Add Location</p>
-          <p className="po">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
-          <div className="pr"> <p className="r">sarawan</p>
-          <p className="op">orangi town ghaziaba Sector 11 1/2 islam chowk</p>
-          <p className="op">Edit</p>
-          <p className="op">Delet</p>
-          </div><hr/>
-
         
+            
+
+            <div className="importantmain" >
+
+               <NavLink to ="/location">            
+                  <button className="bot">Add Location</button>
+                </NavLink>
+
+                  <h2 className="r">Add a Location </h2>
+                 
+                
+                    <Table>
+                          
+                    <tbody>
+                            <tr>
+                                <th>Resturant Name</th>
+                                <th>Location</th>
+                               <th>Edit</th>
+                               <th>Delete</th>
+                            
+                            </tr>
+                      
+                            <tr>
+                                <td>Uniuqe Food</td>
+                                <td>orangi Town Karachi</td>
+                                <td>
+                                    <a href="#">
+                                 <span><img className="iii" src={lock}/></span>
+                                 </a>
+                                 </td>
+                                 <td>
+                                     <a href="#">
+                                <span><img className="iii" src={Delete}/></span>
+                                </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Food</td>
+                                <td>orangi Town Karachi</td>
+                                <td>
+                                <a href="#">
+                                 <span><img className="iii" src={lock}/></span>
+                                 </a>
+                                 </td>
+                                 <td>
+                                 <a href="#">
+                                <span><img className="iii" src={Delete}/></span>
+                                </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Uniuqe Food</td>
+                                <td>orangi Town Karachi</td>
+                                <td>                               
+                                <a href="#">
+                                    <span><img className="iii" src={lock}/></span>
+                                    </a>
+                                    </td>
+                                    <td>
+                                    <a href="#">
+                                <span><img className="iii" src={Delete}/></span>
+                                </a>
+                                </td>
+                            </tr>
+                    
+                        
+                        
+                            <tr>
+                                <td>Uniuqe Food</td>
+                                <td>orangi Town Karachi</td>
+                                <td>
+                                <a href="#">
+                                    <span><img className="iii" src={lock}/></span>
+                                    </a>
+                                </td>
+                                <td>
+                                <a href="#">
+                                    <span><img className="iii" src={Delete}/></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Uniuqe Food</td>
+                                <td>orangi Town Karachi</td>
+                                 
+                                 <td>
+                                 <a href="#">
+                                     <span><img className="iii" src={lock}/></span>
+                                     </a>
+                                     </td>
+                                     <td>
+                                     <a href="#">
+                                <span><img className="iii" src={Delete}/></span>
+                                </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Uniuqe Food</td>
+                                <td>orangi Town Karachi</td>
+                                <td>
+                                <a href="#">
+                                 <span><img className="iii" src={lock}/></span>
+                                 </a>
+                                 </td>
+                                 <td>
+                                 <a href="#">
+                                <span><img className="iii" src={Delete}/></span>
+                                </a>
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </Table>
+                </div>
 
             </div>
 
 
 
-        </div>
+
+            
+
+
+        
     )
 }
 
 const mapStateToProps = (state) => ({
     user: state.userReducer.user,
-  
-  })
-  
-  const mapDispatchtToProps = {
-  }
-  
-  export default connect(mapStateToProps, mapDispatchtToProps)(Home);
+
+})
+
+const mapDispatchtToProps = {
+}
+
+export default connect(mapStateToProps, mapDispatchtToProps)(Home);

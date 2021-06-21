@@ -1,6 +1,40 @@
-.sidebar{
-    background-image: url(../component/assets/sidebar.png);
-    width: 150px;
+@media (max-width:800px) { 
+  .ta{
+display: none;
+
+  }
+  
+}
+
+.ta{
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+@media (min-width:801px) { 
+    .side{
+  display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.sideba{
+     background-image: url(../component/assets/sidebar.png); 
+     width: 150px;
     height: 100vh;
     position: absolute;
 }
@@ -12,6 +46,7 @@
 .te{
     margin-left: 30px;
     color: white;
+    text-decoration: none;
 }
 
 .goal{
@@ -19,4 +54,61 @@
     height: 100px;
     margin-top: 195%;
     margin-left: -50px;
+}
+
+
+
+
+
+
+/* Next  */
+
+
+
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.span{
+  font-size:30px;
+  cursor:pointer;
+  margin-left: 15px;
 }

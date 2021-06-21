@@ -1,0 +1,45 @@
+.mainp{
+    background-image: url('../../component//assets//backraound.png');
+background-repeat: no-repeat;
+width: 100%;
+background-size: cover;
+height: 100vh;
+}
+.text{
+    text-align: center;
+    
+}
+.np{
+    line-height: 7;
+    color: white;
+    font-size: 75px;
+    font-weight: 500!important;
+}
+.pk{
+    font-size: 16px;
+    line-height: 1.8;
+    color: white;
+    
+    margin-top: -212px;
+
+}
+.hg{width: 200px;
+    border-radius: 15px;
+    height: 70px;
+    margin: 10px;
+    border: none;
+    color: black;
+    background-color: #ffbe00;
+
+}
+a{
+    text-decoration: none;
+     
+}
+.jklm{
+    /* height: 417px; */
+    color: white;
+}   
+.am{
+    color: white;
+}

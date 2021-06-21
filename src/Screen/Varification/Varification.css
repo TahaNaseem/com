@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.vari2{
+    
+    display: flex;
+    /* justify-content: center; */
+    align-items : center;
+    width: 400px;
+    height: 300px;
+    margin: auto;
+    margin-top: 170px;
+    flex-direction: column;
+    /* border: solid; */
+    background-color: white;
+    
+}
+.fai{
+    height: 50px;
+    font-size: 40px;
+    border-radius: 10px;
+    flex-direction: row;
+}
+
+
+.h2{
+    flex-direction: column;
+    display: flex;
+    align-self: end;
+    
+    
+}
+.mj{
+    display: flex;
+    flex-direction: row;
+}
+.Submit{
+    color: white ;
+    background-color: #6905db;
+    border: none;
+    margin: 20px;
+    height: 60px;
+    width: 200px;
+    border-radius: 20px;
+}
+.vbn{
+    color: #434446;
+}

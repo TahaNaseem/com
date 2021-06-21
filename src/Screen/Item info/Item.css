@@ -1,0 +1,37 @@
+.filetop{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#change{
+    display: none;
+    visibility: none;
+}
+.visibli{
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 20px;
+    color: gray;
+    
+}
+.borderdash{
+    
+    border-color: rgb(206, 202, 202);
+    border-style: dotted;
+    border-width: 2px;
+    width: 300px;
+    height: 200px;
+    margin-top: 55px;
+}
+.nv{width: 300px;
+    height: 200px;
+
+}
+.hj{
+    float: right;
+    width: 70px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color: #6905db;
+}
